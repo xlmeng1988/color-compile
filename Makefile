@@ -21,8 +21,8 @@ clean:
 	rm -f *.o $(OBJ)
 
 install:
-	cp color_compile /usr/local/bin/
-	cp out_color_info /usr/local/bin/
+	sudo cp color_compile /usr/local/bin/
+	sudo cp out_color_info /usr/local/bin/
 
 	echo 'alias gcc="color_compile gcc"' >> $(SH_CONFIG)
 	echo 'alias g++="color_compile g++"' >> $(SH_CONFIG)
